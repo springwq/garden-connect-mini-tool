@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>开心连连看</title>
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<main id="app" data-screen="landing">
+<header>
+<button id="home" class="icon-button" data-icon="home" aria-label="开心连连看" title="回到首页"></button>
+<span class="header-title">开心小镇</span>
+<button id="sfx-toggle" class="icon-button sfx-toggle" data-icon="speaker" aria-label="关闭音效" title="关闭音效" aria-pressed="true" disabled></button>
+<button id="music-toggle" class="icon-button music-toggle" data-icon="music" aria-label="开启配乐" title="开启配乐" aria-pressed="false" disabled></button>
+<details id="help"><summary class="icon-button" aria-label="玩法帮助" title="玩法帮助">?</summary><div class="help-card"><h2>两件一样，连起来</h2><div class="help-demo" aria-hidden="true"><span></span><i></i><span></span></div><p>点两件相同小物，沿空路连线。最多转两次弯，也能绕到棋盘外面。</p><p>没有倒计时，慢慢找就好。卡住时点灯泡找一对。通关自动送卡，分数越高，卡片星级越高。</p><details class="score-help"><summary>记分规则</summary><p id="score-rules">轻松每对50分，标准100分，挑战150分。连续配对有额外奖励，通关再加分。</p></details></div></details>
+</header>
+<p id="notice" role="status" aria-live="polite"></p>
+<section id="landing">
+<div class="title-lockup"><span class="title-small">开心</span><h1>连连看</h1><p>把快乐连在一起</p></div>
+<div class="world-stage"><canvas id="hero" width="720" height="560" aria-label="明亮的玩具小镇，咖啡屋、花店和十二种圆润的小物"></canvas><button id="world-play" class="world-play" data-icon="spark" aria-label="和小物打招呼" title="点一点小物"></button><span id="world-greeting" role="status"></span></div>
+<div id="themes" class="theme-tabs" aria-label="选择小镇主题"></div>
+<div class="play-dock">
+<fieldset class="difficulty-picker"><legend class="sr-only">选个难度</legend><div id="difficulties"></div></fieldset>
+<button id="start" class="primary play-button" aria-label="开始连连看" disabled><span data-icon="play" aria-hidden="true"></span>开始游戏</button>
+<button id="resume" hidden>继续上次</button>
+<p id="difficulty-note" class="small"></p>
+</div>
+<div id="recent"></div>
+</section>
+<section id="game" hidden>
+<h1 class="sr-only">连连看棋盘</h1>
+<div class="game-heading"><span id="chapter"></span><span class="no-timer" aria-label="不限时">慢慢玩</span></div>
+<div class="score-panel"><div><span class="score-symbol" data-icon="spark" aria-hidden="true"></span><div><span>得分</span><strong id="score">0</strong></div></div><div><span class="record-symbol" data-icon="trophy" aria-hidden="true"></span><div><span>最高</span><strong id="best">—</strong></div></div></div>
+<div class="progress-row"><div id="progress" role="progressbar" aria-label="已配对数量" aria-valuemin="0" aria-valuemax="18" aria-valuenow="0"><span id="progress-fill"></span></div><span id="matched"></span></div>
+<p id="streak" class="small" aria-live="polite"></p>
+<div id="board-wrap"><div id="board" aria-label="六行六列连连看棋盘"></div><canvas id="connection" aria-hidden="true"></canvas><div id="match-fx" aria-hidden="true"></div><div id="victory" hidden><span data-icon="trophy" aria-hidden="true"></span><h2>全部找到啦！</h2><p>把这一局的快乐带走</p></div></div>
+<p id="game-status" class="small" role="status"></p>
+<div class="game-tools"><button id="undo" class="icon-button" data-icon="undo" aria-label="取消选择" title="取消选择"></button><div id="collection" aria-label="已收集的小物"></div><button id="hint" class="icon-button hint-button" data-icon="hint" aria-label="提示一下" title="提示一下"></button></div>
+</section>
+<section id="result" hidden>
+<div class="eyebrow">通关奖励 · 已自动收藏</div><span id="reward-grade"></span><h1 id="result-title">收获一张开心</h1><p id="round-summary" class="round-summary"></p>
+<canvas id="card" width="1080" height="1440" aria-label="你的快乐收藏卡"></canvas>
+<p id="reward-next" class="small"></p>
+<div class="actions result-actions"><button id="save" class="primary" aria-label="保存到相册"><span data-icon="save" aria-hidden="true"></span>保存</button><button id="share" aria-label="带入笔记"><span data-icon="share" aria-hidden="true"></span>分享</button></div>
+<p id="export-notice" class="small" role="status"></p>
+<div class="actions"><button id="again" aria-label="再玩一局"><span data-icon="replay" aria-hidden="true"></span>再玩一局</button></div>
+</section>
+<footer>开心一局 · 不限时</footer>
+</main>
+<script src="./ui.js"></script><script src="./art.js"></script><script src="./connect.js"></script>
+<script src="./rewards.js"></script><script src="./sound.js"></script><script src="./app.js"></script>
+</body></html>

@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+__pycache__/
+dist/
+.cache/
+artifacts/
+release/*/session.json
+release/*/submit.json
+release/*/preview.json
+src/assets/*.mp3
+src/assets/lifestyle-v4.png
+src/assets/toys-v3.png
+docs/platform-reference-2026-11-04.md
