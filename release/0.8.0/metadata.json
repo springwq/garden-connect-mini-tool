@@ -1,0 +1,28 @@
+{
+  "appName": "开心连连看",
+  "slogan": "连一连，收集开心卡",
+  "version": "0.8.0",
+  "categories": [
+    "casual_game"
+  ],
+  "authorizations": [
+    "photos"
+  ],
+  "zipSha256": "b51b231781095a3acf98ee25e5205784014154e6615d59ca8270753c1a95d399",
+  "assets": [
+    {
+      "file": "release/0.8.0/icon.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 67719,
+      "sha256": "30ae4f6e2fb170bb9c5bc518c1ef18778e2c20ca3c95184f0d440229f09e0109"
+    },
+    {
+      "file": "release/0.8.0/cover.png",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 1478616,
+      "sha256": "d03f24318bd6ba686758afcc1dc9863486c5b13dec620f071604fff34c291c6a"
+    }
+  ]
+}
