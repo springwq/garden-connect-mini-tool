@@ -1,0 +1,72 @@
+[
+  {
+    "id": "690",
+    "score": 690,
+    "expected": "元气",
+    "grade": "元气卡 · 1星",
+    "pass": true
+  },
+  {
+    "id": "700",
+    "score": 700,
+    "expected": "闪亮",
+    "grade": "闪亮卡 · 2星",
+    "pass": true
+  },
+  {
+    "id": "2390",
+    "score": 2390,
+    "expected": "闪亮",
+    "grade": "闪亮卡 · 2星",
+    "pass": true
+  },
+  {
+    "id": "2400",
+    "score": 2400,
+    "expected": "珍藏",
+    "grade": "珍藏卡 · 3星",
+    "pass": true
+  },
+  {
+    "id": "4290",
+    "score": 4290,
+    "expected": "珍藏",
+    "grade": "珍藏卡 · 3星",
+    "pass": true
+  },
+  {
+    "id": "4300",
+    "score": 4300,
+    "expected": "梦幻",
+    "grade": "梦幻卡 · 4星",
+    "pass": true
+  },
+  {
+    "id": "4790",
+    "score": 4790,
+    "expected": "梦幻",
+    "grade": "梦幻卡 · 4星",
+    "pass": true
+  },
+  {
+    "id": "4800",
+    "score": 4800,
+    "expected": "典藏",
+    "grade": "典藏卡 · 5星",
+    "pass": true
+  },
+  {
+    "id": "completed-game",
+    "score": 500,
+    "expected": "元气",
+    "grade": "元气卡 · 1星",
+    "pass": true
+  },
+  {
+    "id": "legacy-result",
+    "score": 2000,
+    "expected": "往日收藏",
+    "grade": "往日收藏",
+    "pass": true
+  }
+]

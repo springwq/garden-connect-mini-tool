@@ -1,0 +1,38 @@
+[
+  {
+    "name": "score",
+    "pass": true
+  },
+  {
+    "name": "grade",
+    "pass": true
+  },
+  {
+    "name": "direct-result",
+    "pass": true
+  },
+  {
+    "name": "no-editor",
+    "pass": true
+  },
+  {
+    "name": "layout-320",
+    "pass": true
+  },
+  {
+    "name": "layout-390",
+    "pass": true
+  },
+  {
+    "name": "layout-430",
+    "pass": true
+  },
+  {
+    "name": "stable-card-after-extra-reload",
+    "pass": true
+  },
+  {
+    "name": "saved-once",
+    "pass": true
+  }
+]
